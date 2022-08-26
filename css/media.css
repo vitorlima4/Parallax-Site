@@ -1,0 +1,17 @@
+/*Media Query*/
+@media all and (min-width: 600px ){
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav{
+        flex-direction: row;
+    }
+
+    header a{
+        padding: 13px 40px;
+        font-size: 1.3em;
+    }
+}
