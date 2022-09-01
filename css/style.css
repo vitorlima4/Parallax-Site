@@ -9,7 +9,7 @@
 
 /*Header*/
 header{
-    width: 100%;
+    width: 100vw;
     background-color: rgb(255, 215, 0);
     position: fixed;
     display: flex;
@@ -17,25 +17,40 @@ header{
     text-align: center;
 }
 
+div#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
 header h1{
     font-size: 1.7em;
     padding: 5px 0 ;
 }
 
+i#burguer{
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+i#burguer:hover{
+    color: rgb(255, 255, 255);
+}
+
 header nav{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
 header a{
     font-size: 1.2em;
-    padding: 5px;
+    padding: 5px 0;
     text-decoration: none;
 }
 
 header nav > a:hover{
     background-color: rgb(255, 255, 255);
-    color: rgb(255, 215, 0);
 }
 
 /*Section*/
@@ -51,6 +66,7 @@ section.parallax{
 section#img1{
     background-image: url(../imagens/imagem01.jpg);
     background-position: bottom center;
+    background-position-y: -70px;
 }
 
 section#img2{

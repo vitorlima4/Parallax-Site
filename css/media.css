@@ -6,7 +6,16 @@
         align-items: center;
     }
 
+    div#menu{
+        padding: 0;
+    }
+
+    i#burguer{
+        display: none;
+    }
+
     header nav{
+        display: flex;
         flex-direction: row;
     }
 

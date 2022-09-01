@@ -10,13 +10,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Parallax</title>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <h1><a href="#img1">Parallax</a></h1>
-        <nav>
+        <div id="menu">
+            <h1><a href="#img1">Parallax</a></h1>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        </div>
+
+        <nav id="itens">
             <a href="#sobre">O que é?</a>
             <a href="#vantagens">Vantagens</a>
         </nav>
@@ -26,7 +31,12 @@
 
     <section class="text" id="sobre">
         <h2>O que é o efeito parallax?</h2>
-        <p>O efeito parallax é um recurso bem legal que está sendo cada vez mais utilizado na web. Uma técnica usada por desenvolvedores web para criar um efeito 3D falso, tendo como base uma ilusão de ótica, dando uma impressão ao olho humano de que objetos estão em movimentos. Quando um usuário está navegando em um site usando esse efeito, diferentes conteúdos ou planos de fundo se movimentam em diferentes velocidades, tendo como principal objetivo agradar o visitante e oferecer a ele uma boa experiência visual comparado aos outros sites.
+        <p>O efeito parallax é um recurso bem legal que está sendo cada vez mais utilizado na web. Uma técnica usada por
+            desenvolvedores web para criar um efeito 3D falso, tendo como base uma ilusão de ótica, dando uma impressão
+            ao olho humano de que objetos estão em movimentos. Quando um usuário está navegando em um site usando esse
+            efeito, diferentes conteúdos ou planos de fundo se movimentam em diferentes velocidades, tendo como
+            principal objetivo agradar o visitante e oferecer a ele uma boa experiência visual comparados aos outros
+            sites.
         </p>
     </section>
 
@@ -36,7 +46,7 @@
         <h2>Vantagens de usar o efeito parallax</h2>
         <p>
             O efeito parallax trás com ele vários benefícios, como:
-            
+
         </p>
         <ul>
             <li>O site fica mais atrativo</li>
@@ -52,6 +62,7 @@
             &copy; Desenvolvido por <a href="https://github.com/vitorlima4" target="_blank">Vitor Lima</a> - 2022
         </p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
